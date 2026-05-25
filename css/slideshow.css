@@ -1,0 +1,84 @@
+/* Slideshow Container */
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: 20px auto;
+    background-color: #000;
+}
+
+/* Hide all slides by default */
+.slide {
+    display: none;
+    width: 100%;
+}
+
+/* Image inside slide */
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Fade animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from { opacity: 0.4 }
+    to { opacity: 1 }
+}
+
+/* Previous & next buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.5);
+    user-select: none;
+}
+
+/* Position buttons */
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
+
+/* Hover effect */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Dots container */
+.dots-container {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Dots */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+/* Active dot */
+.dot.active {
+    background-color: #717171;
+}

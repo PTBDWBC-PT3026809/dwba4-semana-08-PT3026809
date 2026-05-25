@@ -1,1 +1,4 @@
-alert("Alerta: Questão 02");
+/**
+ * 
+ */
+alert('Alerta: Questão 02');

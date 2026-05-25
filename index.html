@@ -9,9 +9,11 @@
     <!-- Adiciona o ícone de aba de navegador-->
     <link rel="stylesheet" href="css/conteudo.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/slideshow.css">
     <title>HOME - IFSP - Pirituba</title>
     <!-- Adiciona o título na aba do navegador-->
     <script src="js/disabling.js"></script>
+    <script src="js/slideshow.js"></script>
 </head>
 
 <body>
@@ -24,6 +26,30 @@
         </nav>
 
     </header>
+
+    <!-- Slideshow Container -->
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="Imagens/A.png" alt="Slide 1">
+        </div>
+        <div class="slide fade">
+            <img src="Imagens/B.jpg" alt="Slide 2">
+        </div>
+        <div class="slide fade">
+            <img src="Imagens/C.jpg" alt="Slide 3">
+        </div>
+
+        <!-- Navigation buttons -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <!-- Dots for slide indicators -->
+    <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
 
     <main id="conteudo">
         <!-- indica que é o conteúdo principal dessa página -->
